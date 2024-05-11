@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import AuthPage from "../views/AuthPage.vue";
 import LoginPage from "../views/LoginPage.vue";
 import HomePage from "../views/HomePage.vue";
@@ -13,7 +13,7 @@ import CantSubmitTwicePage from "../views/CantSubmitTwicePage.vue";
 import { doFetch } from "@/utils.js";
 
 const router = createRouter({
-	history: createWebHistory(import.meta.env.BASE_URL),
+	history: createWebHashHistory(import.meta.env.BASE_URL),
 	routes: [
 		{
 			path: "/login",
